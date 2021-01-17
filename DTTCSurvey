@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">
+      DTT Community Discord User Satisfaction Survey
+    </h1>
+    <p id="description" class="description text-center">
+      Thank you for participating in the improvement of our server!
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Discord Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Please, enter your discord name"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number">How long have you been a member?</label>
+      <input
+             type="number"
+             name="Age"
+             id="number"
+             min="3"
+             max="99"
+             class="form-control"
+             placeholder="# of months"
+             required
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="detective">Detective</option>
+        <option value="merc">Mercenary</option>
+        <option value="innocent">Innocent</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Would you recommend our community to a friend?</p>
+      <label>
+        <input
+               name="user-recommend"
+               value="definitely"
+               type="radio"
+               class="input-radio"
+               checked
+               />Definitely</label>
+      <label>
+        <input
+               name="user-recommend"
+               value="maybe"
+               type="radio"
+               class="input-radio"
+               />Maybe</label>
+      <lable>
+        <input
+               name="user-recommend"
+               value="not-sure"
+               type="radio"
+               class="input-radio"
+               />Not sure</label>
+    </div>
+    <div class="form-group">
+      <p>What is your favorite aspect of the community?</p>
+      <select id="most-like" name="most-like" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="cantina">The Cantina</option>
+        <option value="watch-parties">Watch Parties</option>
+        <option value="game-night">Game Nights</option>
+        <option value="extra-life">ExtraLife</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input
+             name="prefer"
+             value="schedule-weekly"
+             type="checkbox"
+             class="input-checkbox"
+               />Weekly Schedule</label>
+      <label>
+        <input
+               name="prefer"
+               value="game-night"
+               type="checkbox"
+               class="input-checkbox"
+               />Game Night</label>
+      <label>
+        <input
+               name="prefer"
+               value="special-events"
+               type="checkbox"
+               class="input-checkbox"
+               />Special Events<span class="clue">(i.e., holiday party, RT events, etc.)</span></label>
+      <label>
+        <input
+               name="prefer"
+               value="commnunity-engagement"
+               type="checkbox"
+               class="input-checkbox"
+               />Community Engagement</label>
+      <label>
+        <input
+               name="prefer"
+               value="content-creation"
+               type="checkbox"
+               class="input-checkbox"
+               />Content Creation</label>
+      <label>
+        <input
+               name="prefer"
+               value="videos"
+               type="checkbox"
+               class="input-checkbox"
+               />Videos</label>
+      <label>
+        <input
+               name="prefer"
+               value="other"
+               type="checkbox"
+               class="input-checkbox"
+               />Other</label>
+    </div>
+    
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+                ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>
+</html>
